@@ -1,0 +1,91 @@
+body{
+    padding: 50px 0;
+    background: url("../content/background.png") no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+   color: #f3f0f0;
+   }
+.wrapper{
+    display: flex;
+    
+}
+.col{
+    font-size:18px;
+    background: rgba(105, 105, 105, 0.95);
+box-shadow: 0 0 10px 5px Gainsboro;
+
+    flex: 1 1;
+    margin: 0 30px;
+    padding: 0;
+}
+.img-wrapper{
+    height: 280px;
+    display: flex;
+    align-items: center
+}
+img{
+    width: 100%;
+    min-width: none;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+.italic { 
+    font-style: italic;
+    text-align: center;
+    color: #d4d3d3;
+}
+p:not(.italic){
+    text-indent: 4ch;
+}
+.text{
+    padding: 0 10px;
+    text-align: justify;
+}
+.color{
+    font-weight: bold;
+    color: white;
+    }
+@media (max-width: 1200px){
+    .img-wrapper{
+        height: auto;
+    }
+}
+@media (max-width: 1010px) {
+    .wrapper{
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    .col{
+        flex: 1 1 40%; 
+        margin: 30px; 
+    }
+}
+@media (max-width: 675px) {
+    .col{
+        flex: 1 1 100%; 
+        margin: 20px 50px;
+    }
+}
+@media (max-width: 480px) {
+    .col{
+        margin: 20px 20px;
+    }
+    h2{
+        margin: auto 5px;
+    }
+}
+@media (max-width: 380px) {
+    .col{
+        margin: 20px 10px;
+    }
+}
+@media (max-width: 300px) {
+    .col{
+        margin: 20px 0px;
+    }
+}
+

@@ -1,0 +1,77 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+background: #989897;
+background: url("content/background.png") no-repeat center center fixed; 
+background-size: cover;
+text-align: center;
+padding-top: 75px;
+box-sizing: border-box;
+}
+@font-face {
+  font-family: 'a_Stamper Bold';
+  src: url('content/a_Stamper_Bold.ttf');
+  }
+  .text_effect {
+    margin: 0;
+  font-family: 'a_Stamper Bold';
+  color: #fbedd5;
+  font-size: 9vw;
+  text-shadow: rgb(74, 56, 56) 4px 4px 4px;
+  }
+.buttons{
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.button {
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(255,245,238, 0.7);
+  box-shadow: rgb(74, 56, 56) 4px 4px 9px;
+  border: none;
+font-family: Garamond;
+font-size: 40px;
+font-weight: bold;
+border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 15px;
+  width: calc(50% - 30px);
+}
+.button:hover{
+  box-shadow: 0 0 10px 5px Gainsboro;
+  cursor: pointer;
+}
+@media(max-width: 600px){
+  .button{
+    font-size: 35px;
+  }
+}
+@media (max-width: 550px) {
+  .buttons {
+    flex-direction: column;
+    min-height: 40%;
+    padding: 20px;
+  }
+  .button{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 30px;
+  }
+}
+@media(max-width: 400px){
+  .button{
+    font-size: 25px;
+  }
+}
+
